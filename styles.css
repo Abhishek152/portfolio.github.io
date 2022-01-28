@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    padding: 0 80px;
+    max-width: 1300px;
+    margin:auto;
+}
+.navbar{
+    position: fixed;
+    background: crimson;
+    width: 100%;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 15px 0;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display:inline-block;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.hover:hover {
+  background-color: black;
+  color: rgba(214, 162, 146, 255);
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.infocharacter{
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.devpic img{
+    width: 330px;
+    margin-top: 260px;
+    margin-right: 50px;
+    
+}
+
+.devinfo{
+    display: flex;
+    margin:250px 0px;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.hello{
+    font-size: 85px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.name{
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+
+.about{
+    font-size: 40px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.moreabout{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.buttons {
+    margin-top: 30px;
+    
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 0 20px;
+    background-color: crimson;
+}
+
+.buttons button a{
+    color: white;
+}
+.hobby,.skills{
+    color: crimson;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+   margin-bottom: 50px;
+}
+
+#main2,#main3{
+  padding-top: 50px;
+  height: 100vh;
+
+}
+
+
+.jig{
+    margin-top: 90px;
+    margin-left: 150px;
+}
+
+.hob{
+margin-left: 200px;
+margin-right: 130px;
+margin-bottom: 100px;
+font-weight: bold;
+font-family: 'Ubuntu',sans-serif;
+font-size: 22px;
+text-align: center;
+display: flex;
+justify-content: space-between;
+}
+
+
+.red{
+    color: crimson;
+}
+
+.hobb{
+    color: black;
+}
+body{
+   
+    place-items: center;
+    
+  }
+  
+  .skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-left: 430px;
+    margin-top: 120px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+    
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+    
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+    
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  
+  }
+  .bar .progress-line.css span{
+    width: 70%;
+  }
+  .bar .progress-line.jquery span{
+    width: 80%;
+  }
+  .bar .progress-line.python span{
+    width: 55%;
+  }
+  .bar .progress-line.mysql span{
+    width: 75%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "70%";
+  }
+  .progress-line.jquery span::after{
+    content: "80%";
+  }
+  .progress-line.python span::after{
+    content: "55%";
+  }
+  .progress-line.mysql span::after{
+    content: "75%";
+  }
+
+  #xzx{
+      margin-top: 300px;
+      margin-bottom: 200px;
+  }
+  
+  #zxz{
+    margin-top: 200px;
+    margin-bottom: 0;
+}
+  
+
